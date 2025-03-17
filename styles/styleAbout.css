@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --color-primario: #000000;
+    --color-secundario: #F6F6F6;
+    --color-terciario: #22D4FD;
+
+    --fuente-montserrat: 'Montserrat' , sans serif;
+    --fuente-krona: 'Krona One' , sans serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
+    box-sizing: border-box;
+    line-height: 1.6;
+    /* height: 100vh; */
+}
+
+.header {
+    padding: 2% 0% 0% 15%;
+}
+
+.header_menu {
+    display: flex;
+    gap: 80px;
+    flex-wrap: wrap;
+}
+
+.header_menu_link {
+    font-size: 1.5rem;
+    color: var(--color-terciario);
+    text-decoration: none;
+    font-family: var(--fuente-montserrat);
+    font-weight: 600;
+}
+
+.header_menu_link:hover {
+    color: #007bff;
+}
+
+.presentacion_imagen {
+    width: 50%;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+strong {
+    color: var(--color-terciario)
+}
+
+.presentacion {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6% 15%;
+    gap: 20px;
+}
+
+.presentacion_contenido_primer_titulo {
+    font-size: 2rem;
+    font-family: var(--fuente-krona);
+}
+
+.presentacion_contenido_segundo_titulo {
+    font-size: 1.5rem;
+    font-family: var(--fuente-krona);
+}
+.presentacion_contenido {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.presentacion_contenido_texto {
+    font-size: 1rem;
+    font-family: var(--fuente-montserrat);
+}
+
+.presentacion_contenido_servicios {
+    font-size: 1rem;
+    font-family: var(--fuente-montserrat);
+}
+
+
+.footer {
+    background-color: var(--color-terciario);
+    padding: 24px;
+    color: var(--color-primario);
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: var(--fuente-montserrat);
+    font-weight: 400;
+}
+
+@media (max-width: 1200px) {
+    .header {
+        padding: 10%;
+    }
+
+    .header_menu {
+        display: flex;
+        justify-content: center;
+    }
+
+    .presentacion {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .presentacion_contenido {
+        width: auto;
+    }
+}
